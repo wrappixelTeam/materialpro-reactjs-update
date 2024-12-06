@@ -15,11 +15,11 @@ import { Providers } from './store/providers';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-   <Providers>
+  <Providers store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    </Providers>
-  
-  
+  </Providers>
+
+
 )

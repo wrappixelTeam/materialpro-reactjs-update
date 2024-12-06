@@ -1,13 +1,15 @@
-import s1 from '../../../assets/images/products/s1.jpg';
-import s2 from '../../../assets/images/products/s2.jpg';
-import s3 from '../../../assets/images/products/s3.jpg';
-import s4 from '../../../assets/images/products/s4.jpg';
-import s5 from '../../../assets/images/products/s5.jpg';
-import s6 from '../../../assets/images/products/s6.jpg';
-import s7 from '../../../assets/images/products/s7.jpg';
-import s8 from '../../../assets/images/products/s8.jpg';
-import s9 from '../../../assets/images/products/s9.jpg';
-import s10 from '../../../assets/images/products/s10.jpg';
+
+import s1 from '../../assets/images/products/s1.jpg'
+import s2 from '../../assets/images/products/s2.jpg';
+import s3 from '../../assets/images/products/s3.jpg';
+import s4 from '../../assets/images/products/s4.jpg';
+import s5 from '../../assets/images/products/s5.jpg';
+import s6 from '../../assets/images/products/s6.jpg';
+import s7 from '../../assets/images/products/s7.jpg';
+import s8 from '../../assets/images/products/s8.jpg';
+import s9 from '../../assets/images/products/s9.jpg';
+import s10 from '../../assets/images/products/s10.jpg';
+import mock from '../mock';
 
 const Shopitems = [
   {
@@ -120,4 +122,8 @@ const Shopitems = [
   },
 ];
 
+
+// Mock the GET request to the email data API
+mock.onGet('/api/data/ecommerce/Shopitems').reply(200, Shopitems);
 export default Shopitems;
+

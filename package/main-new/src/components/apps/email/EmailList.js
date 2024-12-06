@@ -17,6 +17,7 @@ const EmailList = () => {
   useEffect(() => {
     dispatch(fetchEmails());
   }, [dispatch]);
+
   const getVisibleEmail = (emails, filter, emailSearch) => {
     switch (filter) {
       case 'inbox':
@@ -103,3 +104,5 @@ const EmailList = () => {
 };
 
 export default EmailList;
+
+

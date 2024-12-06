@@ -5,6 +5,7 @@ import ChatsReducer from './apps/chat/ChatSlice';
 import ContactsReducer from './apps/contacts/ContactSlice';
 import EmailReducer from './apps/email/EmailSlice';
 import TicketReducer from './apps/ticket/TicketSlice';
+import ecommerceReducer from './apps/ecommerce/EcommerceSlice'
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 const persistConfig = {
@@ -20,6 +21,8 @@ export const store = configureStore({
     contactsReducer: ContactsReducer,
     emailReducer: EmailReducer,
     ticketReducer: TicketReducer,
+    ecommerce: ecommerceReducer,
+
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false, immutableCheck: false }),
